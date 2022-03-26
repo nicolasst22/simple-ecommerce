@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path")
-const productosAPI = require("./src/routes/productosAPI")
-const carritoAPI = require("./src/routes/carritoAPI")
+const productosAPI = require("./src/productos/api/productosAPI")
+const carritoAPI = require("./src/carrito/api/carritoAPI")
 
 const app = express();
 app.use(express.json()); //Used to parse JSON bodies
@@ -24,16 +24,23 @@ app.get("/", (req, res) => {
 })
 
 //otras rutas
-app.use("*", (req, res) =>{
+app.use("*", (req, res) => {
     res.send(
-        { error : -2, descripcion: `ruta '${req.baseUrl}' método '${req.method}' no implementada`}
+        { error: -2, descripcion: `ruta '${req.baseUrl}' método '${req.method}' no implementada` }
     )
-   
+
 })
 
 // // Middleware manejo de errores
 // app.use((error, req, res, next) => {
 //     res.send("Error:", error.message || error);
+// });
+// var admin = require("firebase-admin");
+
+// var serviceAccount = require("./src/config/firestore-key.json");
+
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount)
 // });
 
 

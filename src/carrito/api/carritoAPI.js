@@ -1,7 +1,7 @@
 const express = require("express");
-const carritoController = require("../controllers/CarritoController");
+const carritoController = require("../CarritoController");
 const api = express.Router();
-const soloAdmin = require("../middlewares/SoloAdmin")
+const soloAdmin = require("../../middlewares/SoloAdmin")
 
 //deberia estar deprecado... solo para testing
 api.get("/", carritoController.listaCarritos);

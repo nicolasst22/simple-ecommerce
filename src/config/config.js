@@ -1,3 +1,3 @@
-let admin = 0;
+let admin = 1;
 
 exports.admin = admin;

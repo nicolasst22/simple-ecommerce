@@ -1,0 +1,2 @@
+exports.productos = [];
+exports.carritos = [];
