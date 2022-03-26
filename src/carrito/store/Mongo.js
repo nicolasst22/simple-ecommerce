@@ -9,7 +9,6 @@ db.on("error", console.error.bind(console, "MongoDB connection error"));
 
 class Contenedor {
     constructor() {
-        console.log("mongo carrito");
     }
     save = async (objeto) => {
         const obj = await this.getById(objeto._id || objeto.id);
@@ -27,7 +26,6 @@ class Contenedor {
     }
 
     async getAll() {
-        console.log("getall")
         return await Compra.find({});
     }
 
