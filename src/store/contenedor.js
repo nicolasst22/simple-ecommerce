@@ -7,8 +7,8 @@ class Contenedor {
 		this.fileName = fileName;
 		this.currentId = 1;
 		const initialize = async (fileName) => {
-			if (fs.existsSync(fileName)) {
-				const fileContent = fs.readFileSync(fileName, 'utf-8');
+			if (fs.existsSync(`data/${fileName}`)) {
+				const fileContent = fs.readFileSync(`data/${fileName}`, 'utf-8');
 				this.contenedor = JSON.parse(fileContent)
 				this.currentId = Math.max.apply(Math, this.contenedor.map(function (o) { return o.id; })) + 1;
 			} else {
@@ -20,9 +20,9 @@ class Contenedor {
 
 	writeToFile = async () => {
 		try {
-			await fs.promises.writeFile(this.fileName, JSON.stringify(this.contenedor));
+			await fs.promises.writeFile(`data/${this.fileName}`, JSON.stringify(this.contenedor));
 		} catch (e) {
-			console.error("error escribiendo");
+			console.error("error escribiendo", e);
 		}
 	}
 
