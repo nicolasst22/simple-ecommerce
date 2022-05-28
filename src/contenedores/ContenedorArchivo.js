@@ -1,7 +1,8 @@
 let fs = require('fs');
+const logger = require("../config/logger")
 
 
-class Contenedor {
+class ContenedorArchivo {
 
 	constructor(fileName) {
 		this.fileName = fileName;
@@ -22,7 +23,7 @@ class Contenedor {
 		try {
 			await fs.promises.writeFile(this.fileName, JSON.stringify(this.contenedor));
 		} catch (e) {
-			console.error("error escribiendo");
+			logger.error("error escribiendo");
 		}
 	}
 
@@ -63,5 +64,5 @@ class Contenedor {
 }
 
 module.exports = {
-	Contenedor,
+	ContenedorArchivo,
 };

@@ -1,7 +1,7 @@
-require('dotenv').config();
-const container = process.env.CONTAINER ? "./store/" + process.env.CONTAINER : "./store/contenedor";
-var { Contenedor } = require(container);
-const contenedor = new Contenedor("compras");
+const config = require("../config/config");
+const container = config.CONTAINER ? "./dao/" + config.CONTAINER : "./dao/Archivo";
+const contenedor = require(container);
+const logger = require("../config/logger")
 
 let nextId = 1;
 
@@ -62,7 +62,6 @@ exports.addItem = async (req, res) => {
             const nuevo = { ...body, cantidad: 1 }
             productos.push(nuevo);
             const a = await contenedor.save(result);
-            console.log("a", a);
             res.json(nuevo);
         }
 
@@ -94,7 +93,7 @@ exports.deleteItem = async (req, res) => {
             res.status(404).json(NOT_FOUND);
         }
     } catch (ex) {
-        console.error(ex)
+        logger.error(ex)
         res.status(500).json(ex.message)
     }
 

@@ -1,6 +1,6 @@
 var admin = require("firebase-admin");
 
-var serviceAccount = require("../config/firestore-key.json");
+var serviceAccount = require("../../config/firestore-key.json");
 
 if (admin.apps.length === 0) {
     admin.initializeApp({
@@ -23,7 +23,6 @@ class ContenedorFirebase {
         } else {
             const docRef = await this.collection.add(objeto)
             return await docRef.get().then(d => {
-                console.log(d.id);
                 const data = d.data()
                 return { ...data, id: docRef.id }
             })
@@ -32,8 +31,14 @@ class ContenedorFirebase {
     }
 
     async getById(id) {
-        const doc = await this.collection.doc(id);
+        if (!id) {
+            return null;
+        }
+        const doc = this.collection.doc(id);
         const obj = await doc.get();
+        if (!obj) {
+            return null
+        }
         const data = obj.data();
         if (data) {
             return { ...data, id: doc.id };
@@ -42,6 +47,7 @@ class ContenedorFirebase {
     }
 
     async getAll() {
+
         const querySnapshot = await this.collection.get();
         return querySnapshot.docs.map((doc) => {
             const data = doc.data();

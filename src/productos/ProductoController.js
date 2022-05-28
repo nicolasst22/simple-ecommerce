@@ -1,7 +1,9 @@
-require('dotenv').config();
-const container = process.env.CONTAINER ? "./store/" + process.env.CONTAINER : "./store/contenedor";
-var { Contenedor } = require(container);
-const contenedor = new Contenedor("productos");
+const config = require("../config/config");
+const container = config.CONTAINER ? "./dao/" + config.CONTAINER : "./dao/Archivo";
+const contenedor = require(container);
+const logger = require("../config/logger")
+
+
 
 exports.listaProductos = async (req, res) => {
     res.json(await contenedor.getAll())
@@ -17,7 +19,7 @@ exports.getProducto = async (req, res) => {
             res.status(404).json(NOT_FOUND)
         }
     } catch (ex) {
-        console.error(ex)
+        logger.error(ex)
         res.status(500).json({ error: "error" });
     }
 }

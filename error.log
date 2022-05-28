@@ -1,0 +1,317 @@
+[2022-05-25T10:14:27.373] [ERROR] custom - error Error: Cannot find module 'ejs'
+Require stack:
+- D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js
+- D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js
+- D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\express.js
+- D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\index.js
+- D:\Cursos\coderhouse\simple-ecommerce\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:730:27)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at new View (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:81:14)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:570:12)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:94:9
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\Cursos\\coderhouse\\simple-ecommerce\\node_modules\\express\\lib\\view.js',
+    'D:\\Cursos\\coderhouse\\simple-ecommerce\\node_modules\\express\\lib\\application.js',
+    'D:\\Cursos\\coderhouse\\simple-ecommerce\\node_modules\\express\\lib\\express.js',
+    'D:\\Cursos\\coderhouse\\simple-ecommerce\\node_modules\\express\\index.js',
+    'D:\\Cursos\\coderhouse\\simple-ecommerce\\index.js'
+  ]
+}
+[2022-05-25T10:19:26.626] [ERROR] custom - error SyntaxError: Unexpected token ')' in D:\Cursos\coderhouse\simple-ecommerce\src\views\registro.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12)
+    at Object.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:398:16)
+    at handleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:235:18)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:16)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+[2022-05-25T10:20:28.847] [ERROR] custom - error SyntaxError: Unexpected token ')' in D:\Cursos\coderhouse\simple-ecommerce\src\views\registro.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12)
+    at Object.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:398:16)
+    at handleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:235:18)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:16)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+[2022-05-25T10:20:52.439] [ERROR] custom - error SyntaxError: Unexpected token ')' in D:\Cursos\coderhouse\simple-ecommerce\src\views\registro.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12)
+    at Object.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:398:16)
+    at handleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:235:18)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:16)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+[2022-05-25T10:20:53.764] [ERROR] custom - error SyntaxError: Unexpected token ')' in D:\Cursos\coderhouse\simple-ecommerce\src\views\registro.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12)
+    at Object.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:398:16)
+    at handleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:235:18)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:16)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+[2022-05-25T10:21:53.634] [ERROR] custom - error SyntaxError: Unexpected token ')' in D:\Cursos\coderhouse\simple-ecommerce\src\views\registro.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12)
+    at Object.compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:398:16)
+    at handleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:235:18)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:16)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+[2022-05-25T10:24:35.496] [ERROR] custom - error ReferenceError: D:\Cursos\coderhouse\simple-ecommerce\src\views\registro.ejs:34
+    32|                     name="username"
+    33|                   />
+ >> 34|                   <%if (email) { %>
+    35|                   <div class="alert alert-danger"></div>
+    36|                   <% }; %>
+    37|                 </div>
+
+email is not defined
+    at eval (eval at compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:21:7)
+    at registro (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:130:13
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5) {
+  path: 'D:\\Cursos\\coderhouse\\simple-ecommerce\\src\\views\\registro.ejs'
+}
+[2022-05-25T10:35:23.059] [ERROR] custom - error TypeError: Cannot read property 'file' of undefined
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:143:40
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (D:\Cursos\coderhouse\simple-ecommerce\node_modules\passport\lib\middleware\authenticate.js:346:9)
+    at SessionStrategy.authenticate (D:\Cursos\coderhouse\simple-ecommerce\node_modules\passport\lib\strategies\session.js:75:10)
+[2022-05-25T10:35:49.268] [ERROR] custom - error TypeError: Cannot read property 'avatar' of undefined
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:143:40
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (D:\Cursos\coderhouse\simple-ecommerce\node_modules\passport\lib\middleware\authenticate.js:346:9)
+    at SessionStrategy.authenticate (D:\Cursos\coderhouse\simple-ecommerce\node_modules\passport\lib\strategies\session.js:75:10)
+[2022-05-25T10:36:05.078] [ERROR] custom - error ReferenceError: response is not defined
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:146:5
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (D:\Cursos\coderhouse\simple-ecommerce\node_modules\passport\lib\middleware\authenticate.js:346:9)
+    at SessionStrategy.authenticate (D:\Cursos\coderhouse\simple-ecommerce\node_modules\passport\lib\strategies\session.js:75:10)
+[2022-05-25T10:40:13.240] [ERROR] custom - error MulterError: Unexpected field
+    at wrappedFileFilter (D:\Cursos\coderhouse\simple-ecommerce\node_modules\multer\index.js:40:19)
+    at Busboy.<anonymous> (D:\Cursos\coderhouse\simple-ecommerce\node_modules\multer\lib\make-middleware.js:115:7)
+    at Busboy.emit (events.js:376:20)
+    at Busboy.emit (D:\Cursos\coderhouse\simple-ecommerce\node_modules\busboy\lib\main.js:38:33)
+    at PartStream.<anonymous> (D:\Cursos\coderhouse\simple-ecommerce\node_modules\busboy\lib\types\multipart.js:213:13)
+    at PartStream.emit (events.js:376:20)
+    at HeaderParser.<anonymous> (D:\Cursos\coderhouse\simple-ecommerce\node_modules\busboy\node_modules\dicer\lib\Dicer.js:51:16)
+    at HeaderParser.emit (events.js:376:20)
+    at HeaderParser._finish (D:\Cursos\coderhouse\simple-ecommerce\node_modules\busboy\node_modules\dicer\lib\HeaderParser.js:68:8)
+    at SBMH.<anonymous> (D:\Cursos\coderhouse\simple-ecommerce\node_modules\busboy\node_modules\dicer\lib\HeaderParser.js:40:12) {
+  code: 'LIMIT_UNEXPECTED_FILE',
+  field: 'avatar',
+  storageErrors: []
+}
+[2022-05-25T19:26:09.605] [ERROR] custom - error Error: Failed to lookup view "login" in views directory "D:\Cursos\coderhouse\simple-ecommerce\src\views"
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:114:13
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10) {
+  view: View {
+    defaultEngine: 'ejs',
+    ext: '.ejs',
+    name: 'login',
+    root: 'D:\\Cursos\\coderhouse\\simple-ecommerce\\src\\views',
+    engine: [Function (anonymous)],
+    path: undefined
+  }
+}
+[2022-05-25T19:30:29.565] [ERROR] custom - error ReferenceError: D:\Cursos\coderhouse\simple-ecommerce\src\views\index.ejs:14
+    12|             <div class="card-body">
+    13|               <div class="alert alert-dark" role="alert">
+ >> 14|                 Bienvenido <%- username %>
+    15|                 <span style="float: right">
+    16|                   <a href="/logout">Desloguear</a></span
+    17|                 >
+
+username is not defined
+    at eval (eval at compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:15:17)
+    at index (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:106:9
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5) {
+  path: 'D:\\Cursos\\coderhouse\\simple-ecommerce\\src\\views\\index.ejs'
+}
+[2022-05-25T19:48:02.076] [ERROR] custom - error TypeError: req.isAuthenticated is not a function
+    at auth (D:\Cursos\coderhouse\simple-ecommerce\index.js:94:13)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express-session\index.js:506:7
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\connect-mongo\build\main\lib\MongoStore.js:222:17
+[2022-05-25T19:48:04.273] [ERROR] custom - error TypeError: req.isAuthenticated is not a function
+    at auth (D:\Cursos\coderhouse\simple-ecommerce\index.js:94:13)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express-session\index.js:506:7
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\connect-mongo\build\main\lib\MongoStore.js:222:17
+[2022-05-25T19:48:08.407] [ERROR] custom - error TypeError: req.isAuthenticated is not a function
+    at auth (D:\Cursos\coderhouse\simple-ecommerce\index.js:94:13)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express-session\index.js:506:7
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\connect-mongo\build\main\lib\MongoStore.js:222:17
+[2022-05-25T19:48:10.391] [ERROR] custom - error TypeError: req.isAuthenticated is not a function
+    at auth (D:\Cursos\coderhouse\simple-ecommerce\index.js:94:13)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\index.js:275:10)
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\express-session\index.js:506:7
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\connect-mongo\build\main\lib\MongoStore.js:222:17
+[2022-05-25T20:24:39.176] [ERROR] custom - error Error: Failed to lookup view "logout" in views directory "D:\Cursos\coderhouse\simple-ecommerce\src\views"
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:135:17
+    at D:\Cursos\coderhouse\simple-ecommerce\node_modules\connect-mongo\build\main\lib\MongoStore.js:378:13
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  view: View {
+    defaultEngine: 'ejs',
+    ext: '.ejs',
+    name: 'logout',
+    root: 'D:\\Cursos\\coderhouse\\simple-ecommerce\\src\\views',
+    engine: [Function (anonymous)],
+    path: undefined
+  }
+}
+[2022-05-26T09:19:58.855] [ERROR] custom - error ReferenceError: D:\Cursos\coderhouse\simple-ecommerce\src\views\index.ejs:48
+    46|           data.forEach((prod) => {
+    47|             var newRowContent =
+ >> 48|               '<tr><td> '+<%= prod.nombre %>+'</td>'+
+    49|                 '<td> '+   <%= prod.precio %> +'</td>'+
+    50|                 "<td>"+ "img" +'</tr>';
+    51| 
+
+prod is not defined
+    at eval (eval at compile (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:18:26)
+    at index (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\response.js:1017:7)
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:109:9
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5) {
+  path: 'D:\\Cursos\\coderhouse\\simple-ecommerce\\src\\views\\index.ejs'
+}
+[2022-05-28T09:57:47.003] [ERROR] custom - RestException [Error]: Twilio could not find a Channel with the specified From address
+    at success (D:\Cursos\coderhouse\simple-ecommerce\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\Cursos\coderhouse\simple-ecommerce\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\Cursos\coderhouse\simple-ecommerce\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\Cursos\coderhouse\simple-ecommerce\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\Cursos\coderhouse\simple-ecommerce\node_modules\asap\asap.js:40:19)
+    at flush (D:\Cursos\coderhouse\simple-ecommerce\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+  status: 400,
+  code: 63007,
+  moreInfo: 'https://www.twilio.com/docs/errors/63007',
+  details: undefined
+}
+[2022-05-28T11:15:46.292] [ERROR] custom - error TypeError: Cannot read property 'filename' of undefined
+    at D:\Cursos\coderhouse\simple-ecommerce\index.js:142:30
+    at Layer.handle [as handle_request] (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\coderhouse\simple-ecommerce\node_modules\express\lib\router\route.js:137:13)
+    at Immediate._onImmediate (D:\Cursos\coderhouse\simple-ecommerce\node_modules\multer\lib\make-middleware.js:53:37)
+    at processImmediate (internal/timers.js:464:21)
+[2022-05-28T12:07:14.122] [ERROR] custom - error usuarios validation failed: direccion: La dirección es requerido
+[2022-05-28T12:11:04.488] [ERROR] custom - error usuarios validation failed: direccion: La dirección es requerido
+[2022-05-28T12:12:20.335] [ERROR] custom - error usuarios validation failed: direccion: La dirección es requerido
+[2022-05-28T12:14:26.830] [ERROR] custom - error usuarios validation failed: direccion: La dirección es requerido
+[2022-05-28T12:16:53.288] [ERROR] custom - error usuarios validation failed: direccion: La dirección es requerido
+[2022-05-28T12:23:27.985] [ERROR] custom - error usuarios validation failed: direccion: La dirección es requerido

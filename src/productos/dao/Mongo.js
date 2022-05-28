@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
-const { Producto } = require("../models/Producto")
-
-const connectionString = process.env.MONGO_URI
+const config = require("../../config/config")
+const connectionString = config.MONGO_URI
 const connector = mongoose.connect(connectionString, {})
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error"));
+const {ContenedorMongo} = require('../../contenedores/ContenedorMongo');
+const {Producto}  = require('../../models/Producto');
+
 
 (() => {
     Producto.insertMany([
@@ -82,36 +83,11 @@ db.on("error", console.error.bind(console, "MongoDB connection error"));
     ])
 })
 
-class Contenedor {
+class ProductosMongo extends ContenedorMongo {
     constructor() {
+        super(Producto)
     }
-    save = async (objeto) => {
-        const obj = await this.getById(objeto._id || objeto.id);
-        if (obj) {
-            await Producto.updateOne({ "_id": (objeto._id || objeto.id) }, objeto)
-        } else {
-            await Producto.create(objeto);
-        }
-    }
-
-    async getById(id) {
-        const p = await Producto.findById(mongoose.Types.ObjectId(id))
-        return p;
-    }
-
-    async getAll() {
-        return await Producto.find({});
-    }
-
-    async deleteById(id) {
-        return await Producto.findByIdAndDelete({ "_id": id });
-    }
-
-    async deleteAll() {
-        await Producto.deleteMany({});
-    }
+    
 }
 
-module.exports = {
-    Contenedor,
-};
+module.exports = new ProductosMongo();
